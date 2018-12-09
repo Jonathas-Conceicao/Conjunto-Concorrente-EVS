@@ -4,6 +4,7 @@ O objetivo do trabalho é especificar uma estrutura de Conjuntos que possa ser a
 A estrutura pode armazenar uma quantidade indefinida de elementos sem repetição,
 oferecendo três métodos de interação: **inserir**, **contem** e **remover**.
 O conjunto deve sempre garantir a ausência de _deadlocks_ e respeitar as seguintes propriedades de comutatividade:
+	
 	1. `inserir x <> inserir y sse x /= y`
 	2. `remover x <> remover y sse x /= y`
 	3. `inserir x <> remover y sse x /= y`
