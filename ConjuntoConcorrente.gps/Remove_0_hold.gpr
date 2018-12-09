@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <gxl xmlns="http://www.gupro.de/GXL/gxl-1.0.dtd">
-    <graph role="rule" edgeids="false" edgemode="directed" id="Insert_0_hold">
+    <graph role="rule" edgeids="false" edgemode="directed" id="Remove_0_hold">
         <attr name="$version">
             <string>curly</string>
         </attr>
@@ -21,7 +21,7 @@
         </node>
         <node id="n4">
             <attr name="layout">
-                <string>77 154 20 17</string>
+                <string>78 154 19 17</string>
             </attr>
         </node>
         <node id="n0">
@@ -76,7 +76,7 @@
         </edge>
         <edge from="n4" to="n4">
             <attr name="label">
-                <string>i_1</string>
+                <string>r_1</string>
             </attr>
         </edge>
         <edge from="n0" to="n0">
