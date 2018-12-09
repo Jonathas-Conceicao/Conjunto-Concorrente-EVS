@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<gxl xmlns="http://www.gupro.de/GXL/gxl-1.0.dtd">
+    <graph role="rule" edgeids="false" edgemode="directed" id="invalid_concurrent_insrem">
+        <attr name="$version">
+            <string>curly</string>
+        </attr>
+        <node id="n0">
+            <attr name="layout">
+                <string>73 159 51 17</string>
+            </attr>
+        </node>
+        <node id="n1">
+            <attr name="layout">
+                <string>67 257 60 17</string>
+            </attr>
+        </node>
+        <node id="n4">
+            <attr name="layout">
+                <string>91 51 20 17</string>
+            </attr>
+        </node>
+        <node id="n6">
+            <attr name="layout">
+                <string>86 351 19 17</string>
+            </attr>
+        </node>
+        <node id="n9">
+            <attr name="layout">
+                <string>412 159 51 17</string>
+            </attr>
+        </node>
+        <node id="n10">
+            <attr name="layout">
+                <string>406 257 60 17</string>
+            </attr>
+        </node>
+        <node id="n7">
+            <attr name="layout">
+                <string>430 51 20 17</string>
+            </attr>
+        </node>
+        <node id="n8">
+            <attr name="layout">
+                <string>425 351 19 17</string>
+            </attr>
+        </node>
+        <node id="n2">
+            <attr name="layout">
+                <string>246 393 19 19</string>
+            </attr>
+        </node>
+        <node id="n3">
+            <attr name="layout">
+                <string>249 254 26 17</string>
+            </attr>
+        </node>
+        <edge from="n0" to="n0">
+            <attr name="label">
+                <string>type:Thread</string>
+            </attr>
+        </edge>
+        <edge from="n0" to="n1">
+            <attr name="label">
+                <string>holds</string>
+            </attr>
+        </edge>
+        <edge from="n0" to="n9">
+            <attr name="label">
+                <string>!=</string>
+            </attr>
+        </edge>
+        <edge from="n0" to="n4">
+            <attr name="label">
+                <string>step</string>
+            </attr>
+        </edge>
+        <edge from="n1" to="n1">
+            <attr name="label">
+                <string>type:Element</string>
+            </attr>
+        </edge>
+        <edge from="n1" to="n6">
+            <attr name="label">
+                <string>value</string>
+            </attr>
+        </edge>
+        <edge from="n4" to="n4">
+            <attr name="label">
+                <string>i_1</string>
+            </attr>
+        </edge>
+        <edge from="n6" to="n6">
+            <attr name="label">
+                <string>int:</string>
+            </attr>
+        </edge>
+        <edge from="n9" to="n9">
+            <attr name="label">
+                <string>type:Thread</string>
+            </attr>
+        </edge>
+        <edge from="n9" to="n10">
+            <attr name="label">
+                <string>holds</string>
+            </attr>
+        </edge>
+        <edge from="n9" to="n7">
+            <attr name="label">
+                <string>step</string>
+            </attr>
+        </edge>
+        <edge from="n10" to="n10">
+            <attr name="label">
+                <string>type:Element</string>
+            </attr>
+        </edge>
+        <edge from="n10" to="n8">
+            <attr name="label">
+                <string>value</string>
+            </attr>
+        </edge>
+        <edge from="n7" to="n7">
+            <attr name="label">
+                <string>r_1</string>
+            </attr>
+        </edge>
+        <edge from="n8" to="n8">
+            <attr name="label">
+                <string>int:</string>
+            </attr>
+        </edge>
+        <edge from="n2" to="n2">
+            <attr name="label">
+                <string>prod:</string>
+            </attr>
+        </edge>
+        <edge from="n2" to="n6">
+            <attr name="label">
+                <string>arg:0</string>
+            </attr>
+        </edge>
+        <edge from="n2" to="n8">
+            <attr name="label">
+                <string>arg:1</string>
+            </attr>
+        </edge>
+        <edge from="n2" to="n3">
+            <attr name="label">
+                <string>int:eq</string>
+            </attr>
+        </edge>
+        <edge from="n3" to="n3">
+            <attr name="label">
+                <string>bool:true</string>
+            </attr>
+        </edge>
+    </graph>
+</gxl>

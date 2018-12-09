@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <gxl xmlns="http://www.gupro.de/GXL/gxl-1.0.dtd">
-    <graph role="rule" edgeids="false" edgemode="directed" id="Insert_2_release">
+    <graph role="rule" edgeids="false" edgemode="directed" id="Contains_0_hold">
         <attr name="$version">
             <string>curly</string>
         </attr>
@@ -14,14 +14,19 @@
                 <string>399 31 26 17</string>
             </attr>
         </node>
-        <node id="n4">
+        <node id="n1">
             <attr name="layout">
                 <string>397 88 32 17</string>
             </attr>
         </node>
-        <node id="n0">
+        <node id="n4">
             <attr name="layout">
                 <string>77 154 19 17</string>
+            </attr>
+        </node>
+        <node id="n0">
+            <attr name="layout">
+                <string>216 251 24 17</string>
             </attr>
         </node>
         <node id="n5">
@@ -34,24 +39,24 @@
                 <string>type:Thread</string>
             </attr>
         </edge>
-        <edge from="n2" to="n0">
+        <edge from="n2" to="n1">
+            <attr name="label">
+                <string>new:idle</string>
+            </attr>
+        </edge>
+        <edge from="n2" to="n3">
+            <attr name="label">
+                <string>del:idle</string>
+            </attr>
+        </edge>
+        <edge from="n2" to="n4">
             <attr name="label">
                 <string>step</string>
             </attr>
         </edge>
         <edge from="n2" to="n5">
             <attr name="label">
-                <string>del:holds</string>
-            </attr>
-        </edge>
-        <edge from="n2" to="n3">
-            <attr name="label">
-                <string>new:idle</string>
-            </attr>
-        </edge>
-        <edge from="n2" to="n4">
-            <attr name="label">
-                <string>del:idle</string>
+                <string>new:holds</string>
             </attr>
         </edge>
         <edge from="n3" to="n3">
@@ -59,19 +64,24 @@
                 <string>bool:true</string>
             </attr>
         </edge>
-        <edge from="n4" to="n4">
+        <edge from="n1" to="n1">
             <attr name="label">
                 <string>bool:false</string>
             </attr>
         </edge>
-        <edge from="n0" to="n0">
+        <edge from="n4" to="n4">
             <attr name="label">
-                <string>del:</string>
+                <string>new:</string>
+            </attr>
+        </edge>
+        <edge from="n4" to="n4">
+            <attr name="label">
+                <string>c_1</string>
             </attr>
         </edge>
         <edge from="n0" to="n0">
             <attr name="label">
-                <string>i_2</string>
+                <string>type:Set</string>
             </attr>
         </edge>
         <edge from="n5" to="n5">
@@ -81,12 +91,12 @@
         </edge>
         <edge from="n5" to="n3">
             <attr name="label">
-                <string>del:locked</string>
+                <string>new:locked</string>
             </attr>
         </edge>
-        <edge from="n5" to="n4">
+        <edge from="n5" to="n1">
             <attr name="label">
-                <string>new:locked</string>
+                <string>del:locked</string>
             </attr>
         </edge>
     </graph>

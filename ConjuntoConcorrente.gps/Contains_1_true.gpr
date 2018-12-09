@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <gxl xmlns="http://www.gupro.de/GXL/gxl-1.0.dtd">
-    <graph role="rule" edgeids="false" edgemode="directed" id="Insert_2_release">
+    <graph role="rule" edgeids="false" edgemode="directed" id="Contains_1_true">
         <attr name="$version">
             <string>curly</string>
         </attr>
@@ -21,12 +21,17 @@
         </node>
         <node id="n0">
             <attr name="layout">
-                <string>77 154 19 17</string>
+                <string>76 154 22 17</string>
             </attr>
         </node>
         <node id="n5">
             <attr name="layout">
                 <string>570 149 60 17</string>
+            </attr>
+        </node>
+        <node id="n1">
+            <attr name="layout">
+                <string>219 259 23 17</string>
             </attr>
         </node>
         <edge from="n2" to="n2">
@@ -71,7 +76,7 @@
         </edge>
         <edge from="n0" to="n0">
             <attr name="label">
-                <string>i_2</string>
+                <string>c_1</string>
             </attr>
         </edge>
         <edge from="n5" to="n5">
@@ -87,6 +92,16 @@
         <edge from="n5" to="n4">
             <attr name="label">
                 <string>new:locked</string>
+            </attr>
+        </edge>
+        <edge from="n1" to="n1">
+            <attr name="label">
+                <string>type:Set</string>
+            </attr>
+        </edge>
+        <edge from="n1" to="n5">
+            <attr name="label">
+                <string>contains</string>
             </attr>
         </edge>
     </graph>
