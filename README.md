@@ -46,7 +46,7 @@ EF(!thread_is_idle)
 1. Thread eventualmente concluí (_starvation_)
 ```
 AX(Insert_0_holds -> EF(Insert_2_release)) &
-AX(Remove_0_holds -> EF(Remove_2_release)) &
+AX(Remove_0_holds -> EF(Remove_2_release))
 ```
 1. É sempre possível inserir ou remover (_deadlocks free_)
 ```
