@@ -18,23 +18,23 @@ O conjunto deve sempre garantir a ausência de _deadlocks_ e respeitar as seguin
 Propriedades de Comutatividade:
 1. inserir x <> inserir y sse x /= y (Inserção concorrente)
 ```
-!EX(invalid_concurrent_insert)
+!EF(invalid_concurrent_insert)
 ```
-1. remover x <> remover y sse x /= y (Remoção concorrente)
+2. remover x <> remover y sse x /= y (Remoção concorrente)
 ```
-!EX(invalid_concurrent_remove)
+!EF(invalid_concurrent_remove)
 ```
-1. inserir x <> remover y sse x /= y (Inserção e remoção concorrente)
+3. inserir x <> remover y sse x /= y (Inserção e remoção concorrente)
 ```
-!EX(invalid_concurrent_insrem)
+!EF(invalid_concurrent_insrem)
 ```
 4. contem  x <> inserir y sse x /= y
 ```
-!EX(invalid_concurrent_conins)
+!EF(invalid_concurrent_conins)
 ```
 5. contem  x <> remover y sse x /= y
 ```
-!EX(invalid_concurrent_conrem)
+!EF(invalid_concurrent_conrem)
 ```
 
 Propriedades de execução das Threads
@@ -43,12 +43,12 @@ Propriedades de execução das Threads
 ```
 EF(!thread_is_idle)
 ```
-1. Thread eventualmente concluí (_starvation_)
+2. Thread eventualmente concluí (_starvation_)
 ```
-AX(Insert_0_holds -> EF(Insert_2_release)) &
-AX(Remove_0_holds -> EF(Remove_2_release))
+AG(Insert_0_holds -> EF(Insert_2_release)) &
+AG(Remove_0_holds -> EF(Remove_2_release))
 ```
-1. É sempre possível inserir ou remover (_deadlocks free_)
+3. É sempre possível inserir ou remover (_deadlocks free_)
 ```
-AX(EF(Insert_1_commit) & EF(Remove_1_commit))
+AG(EF(Insert_1_commit) & EF(Remove_1_commit))
 ```

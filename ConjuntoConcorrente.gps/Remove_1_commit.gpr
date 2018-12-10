@@ -1,9 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <gxl xmlns="http://www.gupro.de/GXL/gxl-1.0.dtd">
     <graph role="rule" edgeids="false" edgemode="directed" id="Remove_1_commit">
-        <attr name="priority">
-            <string>1</string>
-        </attr>
         <attr name="$version">
             <string>curly</string>
         </attr>
@@ -14,17 +11,12 @@
         </node>
         <node id="n4">
             <attr name="layout">
-                <string>77 154 20 17</string>
+                <string>69 154 35 17</string>
             </attr>
         </node>
         <node id="n0">
             <attr name="layout">
                 <string>216 251 24 17</string>
-            </attr>
-        </node>
-        <node id="n3">
-            <attr name="layout">
-                <string>77 109 19 17</string>
             </attr>
         </node>
         <node id="n6">
@@ -37,9 +29,9 @@
                 <string>type:Thread</string>
             </attr>
         </edge>
-        <edge from="n2" to="n3">
+        <edge from="n2" to="n6">
             <attr name="label">
-                <string>step</string>
+                <string>holds</string>
             </attr>
         </edge>
         <edge from="n2" to="n4">
@@ -47,19 +39,19 @@
                 <string>step</string>
             </attr>
         </edge>
-        <edge from="n2" to="n6">
+        <edge from="n4" to="n4">
             <attr name="label">
-                <string>holds</string>
+                <string>type:State</string>
             </attr>
         </edge>
         <edge from="n4" to="n4">
             <attr name="label">
-                <string>del:</string>
+                <string>del:r_1</string>
             </attr>
         </edge>
         <edge from="n4" to="n4">
             <attr name="label">
-                <string>r_1</string>
+                <string>new:r_2</string>
             </attr>
         </edge>
         <edge from="n0" to="n0">
@@ -70,16 +62,6 @@
         <edge from="n0" to="n6">
             <attr name="label">
                 <string>del:contains</string>
-            </attr>
-        </edge>
-        <edge from="n3" to="n3">
-            <attr name="label">
-                <string>new:</string>
-            </attr>
-        </edge>
-        <edge from="n3" to="n3">
-            <attr name="label">
-                <string>r_2</string>
             </attr>
         </edge>
         <edge from="n6" to="n6">

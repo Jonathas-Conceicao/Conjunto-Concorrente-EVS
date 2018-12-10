@@ -16,12 +16,12 @@
         </node>
         <node id="n1">
             <attr name="layout">
-                <string>397 88 32 17</string>
+                <string>398 88 30 17</string>
             </attr>
         </node>
         <node id="n4">
             <attr name="layout">
-                <string>77 154 19 17</string>
+                <string>60 137 52 51</string>
             </attr>
         </node>
         <node id="n0">
@@ -37,16 +37,6 @@
         <edge from="n2" to="n2">
             <attr name="label">
                 <string>type:Thread</string>
-            </attr>
-        </edge>
-        <edge from="n2" to="n1">
-            <attr name="label">
-                <string>new:idle</string>
-            </attr>
-        </edge>
-        <edge from="n2" to="n3">
-            <attr name="label">
-                <string>del:idle</string>
             </attr>
         </edge>
         <edge from="n2" to="n4">
@@ -71,12 +61,17 @@
         </edge>
         <edge from="n4" to="n4">
             <attr name="label">
-                <string>new:</string>
+                <string>type:State</string>
             </attr>
         </edge>
         <edge from="n4" to="n4">
             <attr name="label">
-                <string>c_1</string>
+                <string>del:idle</string>
+            </attr>
+        </edge>
+        <edge from="n4" to="n4">
+            <attr name="label">
+                <string>new:c_1</string>
             </attr>
         </edge>
         <edge from="n0" to="n0">

@@ -16,7 +16,7 @@
         </node>
         <node id="n4">
             <attr name="layout">
-                <string>91 51 19 17</string>
+                <string>81 42 39 34</string>
             </attr>
         </node>
         <node id="n6">
@@ -36,7 +36,7 @@
         </node>
         <node id="n7">
             <attr name="layout">
-                <string>430 51 19 17</string>
+                <string>423 51 33 17</string>
             </attr>
         </node>
         <node id="n8">
@@ -59,6 +59,11 @@
                 <string>type:Thread</string>
             </attr>
         </edge>
+        <edge from="n0" to="n4">
+            <attr name="label">
+                <string>step</string>
+            </attr>
+        </edge>
         <edge from="n0" to="n1">
             <attr name="label">
                 <string>holds</string>
@@ -69,11 +74,6 @@
                 <string>!=</string>
             </attr>
         </edge>
-        <edge from="n0" to="n4">
-            <attr name="label">
-                <string>step</string>
-            </attr>
-        </edge>
         <edge from="n1" to="n1">
             <attr name="label">
                 <string>type:Element</string>
@@ -82,6 +82,11 @@
         <edge from="n1" to="n6">
             <attr name="label">
                 <string>value</string>
+            </attr>
+        </edge>
+        <edge from="n4" to="n4">
+            <attr name="label">
+                <string>type:State</string>
             </attr>
         </edge>
         <edge from="n4" to="n4">
@@ -117,6 +122,11 @@
         <edge from="n10" to="n8">
             <attr name="label">
                 <string>value</string>
+            </attr>
+        </edge>
+        <edge from="n7" to="n7">
+            <attr name="label">
+                <string>type:State</string>
             </attr>
         </edge>
         <edge from="n7" to="n7">

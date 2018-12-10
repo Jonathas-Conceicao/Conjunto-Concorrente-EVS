@@ -16,7 +16,7 @@
         </node>
         <node id="n2">
             <attr name="layout">
-                <string>120 201 26 17</string>
+                <string>113 192 39 34</string>
             </attr>
         </node>
         <node id="n3">
@@ -61,12 +61,17 @@
         </edge>
         <edge from="n1" to="n2">
             <attr name="label">
-                <string>idle</string>
+                <string>step</string>
             </attr>
         </edge>
         <edge from="n2" to="n2">
             <attr name="label">
-                <string>bool:true</string>
+                <string>type:State</string>
+            </attr>
+        </edge>
+        <edge from="n2" to="n2">
+            <attr name="label">
+                <string>idle</string>
             </attr>
         </edge>
         <edge from="n3" to="n3">

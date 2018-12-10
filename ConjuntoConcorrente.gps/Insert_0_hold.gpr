@@ -1,9 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <gxl xmlns="http://www.gupro.de/GXL/gxl-1.0.dtd">
     <graph role="rule" edgeids="false" edgemode="directed" id="Insert_0_hold">
-        <attr name="priority">
-            <string>1</string>
-        </attr>
         <attr name="$version">
             <string>curly</string>
         </attr>
@@ -19,12 +16,12 @@
         </node>
         <node id="n1">
             <attr name="layout">
-                <string>397 88 32 17</string>
+                <string>398 88 30 17</string>
             </attr>
         </node>
         <node id="n4">
             <attr name="layout">
-                <string>77 154 20 17</string>
+                <string>63 137 48 51</string>
             </attr>
         </node>
         <node id="n0">
@@ -37,11 +34,6 @@
                 <string>570 149 60 17</string>
             </attr>
         </node>
-        <edge from="n2" to="n3">
-            <attr name="label">
-                <string>del:idle</string>
-            </attr>
-        </edge>
         <edge from="n2" to="n2">
             <attr name="label">
                 <string>type:Thread</string>
@@ -57,11 +49,6 @@
                 <string>step</string>
             </attr>
         </edge>
-        <edge from="n2" to="n1">
-            <attr name="label">
-                <string>new:idle</string>
-            </attr>
-        </edge>
         <edge from="n3" to="n3">
             <attr name="label">
                 <string>bool:true</string>
@@ -74,12 +61,17 @@
         </edge>
         <edge from="n4" to="n4">
             <attr name="label">
-                <string>new:</string>
+                <string>type:State</string>
             </attr>
         </edge>
         <edge from="n4" to="n4">
             <attr name="label">
-                <string>i_1</string>
+                <string>del:idle</string>
+            </attr>
+        </edge>
+        <edge from="n4" to="n4">
+            <attr name="label">
+                <string>new:i_1</string>
             </attr>
         </edge>
         <edge from="n0" to="n0">
@@ -87,14 +79,14 @@
                 <string>type:Set</string>
             </attr>
         </edge>
-        <edge from="n5" to="n1">
-            <attr name="label">
-                <string>del:locked</string>
-            </attr>
-        </edge>
         <edge from="n5" to="n5">
             <attr name="label">
                 <string>type:Element</string>
+            </attr>
+        </edge>
+        <edge from="n5" to="n1">
+            <attr name="label">
+                <string>del:locked</string>
             </attr>
         </edge>
         <edge from="n5" to="n3">

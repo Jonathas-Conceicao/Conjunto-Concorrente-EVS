@@ -16,7 +16,7 @@
         </node>
         <node id="n4">
             <attr name="layout">
-                <string>231 178 31 17</string>
+                <string>230 178 32 17</string>
             </attr>
         </node>
         <node id="n2">
@@ -29,9 +29,9 @@
                 <string>88 115 51 17</string>
             </attr>
         </node>
-        <node id="n5">
+        <node id="n6">
             <attr name="layout">
-                <string>88 30 31 17</string>
+                <string>293 4 39 119</string>
             </attr>
         </node>
         <edge from="n0" to="n0">
@@ -77,22 +77,49 @@
                 <string>type:Thread</string>
             </attr>
         </edge>
-        <edge from="n3" to="n5">
-            <attr name="label">
-                <string>idle</string>
-            </attr>
-            <attr name="layout">
-                <string>575 -35 113 123 103 38 11</string>
-            </attr>
-        </edge>
         <edge from="n3" to="n1">
             <attr name="label">
                 <string>holds</string>
             </attr>
         </edge>
-        <edge from="n5" to="n5">
+        <edge from="n3" to="n6">
             <attr name="label">
-                <string>bool:</string>
+                <string>step</string>
+            </attr>
+        </edge>
+        <edge from="n6" to="n6">
+            <attr name="label">
+                <string>type:State</string>
+            </attr>
+        </edge>
+        <edge from="n6" to="n6">
+            <attr name="label">
+                <string>c_1</string>
+            </attr>
+        </edge>
+        <edge from="n6" to="n6">
+            <attr name="label">
+                <string>i_1</string>
+            </attr>
+        </edge>
+        <edge from="n6" to="n6">
+            <attr name="label">
+                <string>i_2</string>
+            </attr>
+        </edge>
+        <edge from="n6" to="n6">
+            <attr name="label">
+                <string>idle</string>
+            </attr>
+        </edge>
+        <edge from="n6" to="n6">
+            <attr name="label">
+                <string>r_1</string>
+            </attr>
+        </edge>
+        <edge from="n6" to="n6">
+            <attr name="label">
+                <string>r_2</string>
             </attr>
         </edge>
     </graph>

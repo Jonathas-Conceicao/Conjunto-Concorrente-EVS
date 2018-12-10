@@ -14,11 +14,6 @@
                 <string>107 116 51 17</string>
             </attr>
         </node>
-        <node id="n17">
-            <attr name="layout">
-                <string>120 201 26 17</string>
-            </attr>
-        </node>
         <node id="n13">
             <attr name="layout">
                 <string>265 116 60 17</string>
@@ -81,12 +76,17 @@
         </node>
         <node id="n10">
             <attr name="layout">
-                <string>88 478 26 17</string>
+                <string>81 469 39 34</string>
             </attr>
         </node>
         <node id="n7">
             <attr name="layout">
                 <string>355 471 8 17</string>
+            </attr>
+        </node>
+        <node id="n0">
+            <attr name="layout">
+                <string>109 189 39 34</string>
             </attr>
         </node>
         <edge from="n12" to="n12">
@@ -99,14 +99,9 @@
                 <string>type:Thread</string>
             </attr>
         </edge>
-        <edge from="n6" to="n17">
+        <edge from="n6" to="n0">
             <attr name="label">
-                <string>idle</string>
-            </attr>
-        </edge>
-        <edge from="n17" to="n17">
-            <attr name="label">
-                <string>bool:true</string>
+                <string>step</string>
             </attr>
         </edge>
         <edge from="n13" to="n13">
@@ -184,14 +179,14 @@
                 <string>type:Element</string>
             </attr>
         </edge>
-        <edge from="n8" to="n15">
-            <attr name="label">
-                <string>locked</string>
-            </attr>
-        </edge>
         <edge from="n8" to="n3">
             <attr name="label">
                 <string>value</string>
+            </attr>
+        </edge>
+        <edge from="n8" to="n15">
+            <attr name="label">
+                <string>locked</string>
             </attr>
         </edge>
         <edge from="n1" to="n1">
@@ -206,7 +201,7 @@
         </edge>
         <edge from="n14" to="n10">
             <attr name="label">
-                <string>idle</string>
+                <string>step</string>
             </attr>
         </edge>
         <edge from="n15" to="n15">
@@ -216,12 +211,27 @@
         </edge>
         <edge from="n10" to="n10">
             <attr name="label">
-                <string>bool:true</string>
+                <string>type:State</string>
+            </attr>
+        </edge>
+        <edge from="n10" to="n10">
+            <attr name="label">
+                <string>idle</string>
             </attr>
         </edge>
         <edge from="n7" to="n7">
             <attr name="label">
                 <string>int:2</string>
+            </attr>
+        </edge>
+        <edge from="n0" to="n0">
+            <attr name="label">
+                <string>type:State</string>
+            </attr>
+        </edge>
+        <edge from="n0" to="n0">
+            <attr name="label">
+                <string>idle</string>
             </attr>
         </edge>
     </graph>
