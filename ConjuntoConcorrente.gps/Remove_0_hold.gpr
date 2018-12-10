@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <gxl xmlns="http://www.gupro.de/GXL/gxl-1.0.dtd">
     <graph role="rule" edgeids="false" edgemode="directed" id="Remove_0_hold">
+        <attr name="priority">
+            <string>1</string>
+        </attr>
         <attr name="$version">
             <string>curly</string>
         </attr>
@@ -34,19 +37,9 @@
                 <string>570 149 60 17</string>
             </attr>
         </node>
-        <edge from="n2" to="n2">
+        <edge from="n2" to="n4">
             <attr name="label">
-                <string>type:Thread</string>
-            </attr>
-        </edge>
-        <edge from="n2" to="n1">
-            <attr name="label">
-                <string>new:idle</string>
-            </attr>
-        </edge>
-        <edge from="n2" to="n3">
-            <attr name="label">
-                <string>del:idle</string>
+                <string>step</string>
             </attr>
         </edge>
         <edge from="n2" to="n5">
@@ -54,9 +47,19 @@
                 <string>new:holds</string>
             </attr>
         </edge>
-        <edge from="n2" to="n4">
+        <edge from="n2" to="n2">
             <attr name="label">
-                <string>step</string>
+                <string>type:Thread</string>
+            </attr>
+        </edge>
+        <edge from="n2" to="n3">
+            <attr name="label">
+                <string>del:idle</string>
+            </attr>
+        </edge>
+        <edge from="n2" to="n1">
+            <attr name="label">
+                <string>new:idle</string>
             </attr>
         </edge>
         <edge from="n3" to="n3">
@@ -84,11 +87,6 @@
                 <string>type:Set</string>
             </attr>
         </edge>
-        <edge from="n5" to="n5">
-            <attr name="label">
-                <string>type:Element</string>
-            </attr>
-        </edge>
         <edge from="n5" to="n3">
             <attr name="label">
                 <string>new:locked</string>
@@ -97,6 +95,11 @@
         <edge from="n5" to="n1">
             <attr name="label">
                 <string>del:locked</string>
+            </attr>
+        </edge>
+        <edge from="n5" to="n5">
+            <attr name="label">
+                <string>type:Element</string>
             </attr>
         </edge>
     </graph>

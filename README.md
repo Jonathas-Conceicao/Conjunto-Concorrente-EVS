@@ -47,7 +47,6 @@ EF(!thread_is_idle)
 ```
 AX(Insert_0_holds -> EF(Insert_2_release)) &
 AX(Remove_0_holds -> EF(Remove_2_release)) &
-AX(Contains_0_holds -> EF(Contains_1_true | Contains_1_false))
 ```
 1. É sempre possível inserir ou remover (_deadlocks free_)
 ```

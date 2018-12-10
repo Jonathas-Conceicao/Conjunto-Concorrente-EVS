@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <gxl xmlns="http://www.gupro.de/GXL/gxl-1.0.dtd">
     <graph role="rule" edgeids="false" edgemode="directed" id="Remove_1_commit">
+        <attr name="priority">
+            <string>1</string>
+        </attr>
         <attr name="$version">
             <string>curly</string>
         </attr>
@@ -34,11 +37,6 @@
                 <string>type:Thread</string>
             </attr>
         </edge>
-        <edge from="n2" to="n6">
-            <attr name="label">
-                <string>holds</string>
-            </attr>
-        </edge>
         <edge from="n2" to="n3">
             <attr name="label">
                 <string>step</string>
@@ -47,6 +45,11 @@
         <edge from="n2" to="n4">
             <attr name="label">
                 <string>step</string>
+            </attr>
+        </edge>
+        <edge from="n2" to="n6">
+            <attr name="label">
+                <string>holds</string>
             </attr>
         </edge>
         <edge from="n4" to="n4">

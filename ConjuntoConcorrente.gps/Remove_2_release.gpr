@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <gxl xmlns="http://www.gupro.de/GXL/gxl-1.0.dtd">
     <graph role="rule" edgeids="false" edgemode="directed" id="Remove_2_release">
+        <attr name="priority">
+            <string>1</string>
+        </attr>
         <attr name="$version">
             <string>curly</string>
         </attr>
@@ -29,14 +32,14 @@
                 <string>570 149 60 17</string>
             </attr>
         </node>
-        <edge from="n2" to="n2">
-            <attr name="label">
-                <string>type:Thread</string>
-            </attr>
-        </edge>
         <edge from="n2" to="n5">
             <attr name="label">
                 <string>del:holds</string>
+            </attr>
+        </edge>
+        <edge from="n2" to="n2">
+            <attr name="label">
+                <string>type:Thread</string>
             </attr>
         </edge>
         <edge from="n2" to="n0">
@@ -74,11 +77,6 @@
                 <string>r_2</string>
             </attr>
         </edge>
-        <edge from="n5" to="n5">
-            <attr name="label">
-                <string>type:Element</string>
-            </attr>
-        </edge>
         <edge from="n5" to="n4">
             <attr name="label">
                 <string>new:locked</string>
@@ -87,6 +85,11 @@
         <edge from="n5" to="n3">
             <attr name="label">
                 <string>del:locked</string>
+            </attr>
+        </edge>
+        <edge from="n5" to="n5">
+            <attr name="label">
+                <string>type:Element</string>
             </attr>
         </edge>
     </graph>

@@ -99,14 +99,14 @@
                 <string>type:Element</string>
             </attr>
         </edge>
-        <edge from="n6" to="n7">
-            <attr name="label">
-                <string>locked</string>
-            </attr>
-        </edge>
         <edge from="n6" to="n8">
             <attr name="label">
                 <string>value</string>
+            </attr>
+        </edge>
+        <edge from="n6" to="n7">
+            <attr name="label">
+                <string>locked</string>
             </attr>
         </edge>
         <edge from="n7" to="n7">

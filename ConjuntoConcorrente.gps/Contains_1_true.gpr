@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <gxl xmlns="http://www.gupro.de/GXL/gxl-1.0.dtd">
     <graph role="rule" edgeids="false" edgemode="directed" id="Contains_1_true">
+        <attr name="priority">
+            <string>1</string>
+        </attr>
         <attr name="$version">
             <string>curly</string>
         </attr>
@@ -34,14 +37,19 @@
                 <string>219 259 23 17</string>
             </attr>
         </node>
+        <edge from="n2" to="n0">
+            <attr name="label">
+                <string>step</string>
+            </attr>
+        </edge>
         <edge from="n2" to="n2">
             <attr name="label">
                 <string>type:Thread</string>
             </attr>
         </edge>
-        <edge from="n2" to="n0">
+        <edge from="n2" to="n4">
             <attr name="label">
-                <string>step</string>
+                <string>del:idle</string>
             </attr>
         </edge>
         <edge from="n2" to="n5">
@@ -52,11 +60,6 @@
         <edge from="n2" to="n3">
             <attr name="label">
                 <string>new:idle</string>
-            </attr>
-        </edge>
-        <edge from="n2" to="n4">
-            <attr name="label">
-                <string>del:idle</string>
             </attr>
         </edge>
         <edge from="n3" to="n3">
@@ -94,14 +97,14 @@
                 <string>new:locked</string>
             </attr>
         </edge>
-        <edge from="n1" to="n1">
-            <attr name="label">
-                <string>type:Set</string>
-            </attr>
-        </edge>
         <edge from="n1" to="n5">
             <attr name="label">
                 <string>contains</string>
+            </attr>
+        </edge>
+        <edge from="n1" to="n1">
+            <attr name="label">
+                <string>type:Set</string>
             </attr>
         </edge>
     </graph>
